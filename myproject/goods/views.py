@@ -6,17 +6,17 @@ def catalog(request):
     contex: dict[str, any] = {
         'title': 'Home - Каталог',
         'goods': [
-            {'image': 'deps/images/goods/set of tea table and three chairs.jpg',
+            {'image': 'deps/images/goods/bread.jpg',
              'name': 'Хлеб',
              'description': 'Обычный хлеб',
-             'price': 50.00},
+             'price': 30.00},
 
-            {'image': 'deps/images/goods/set of tea table and two chairs.jpg',
+            {'image': 'deps/images/goods/milk1.jpg',
              'name': 'Молоко',
              'description': 'Молоко Талицкое',
              'price': 93.00},
 
-            {'image': 'deps/images/goods/double bed.jpg',
+            {'image': 'deps/images/goods/smetana.jpg',
              'name': 'Сметана',
              'description': 'Сметана Шадринская',
              'price': 67.00},
@@ -24,7 +24,7 @@ def catalog(request):
             {'image': 'deps/images/goods/kitchen table.jpg',
              'name': 'Мука',
              'description': 'Мука твердого помола',
-             'price': 120.00},
+             'price': 30.00},
 
 
 
