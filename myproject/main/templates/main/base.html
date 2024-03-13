@@ -59,7 +59,7 @@
                             <li><a class="dropdown-item  text-white" href="carts/cart.html">Корзина</a></li>
                             <li><a class="dropdown-item  text-white" href="users/profile.html">Личный кабинет</a>
                             </li>
-                            <li><a class="dropdown-item  text-white" href="#">Админ панель</a></li>
+                            <li><a class="dropdown-item  text-white" href="{% url 'admin:index' %}">Админ панель</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -89,7 +89,7 @@
                 </button>
                 <ul class="dropdown-menu bg-dark" data-bs-theme="dark">
                     <li><a class="dropdown-item text-white" href=' {% url "catalog:index" %}'>Все товары</a></li>
-                    <li><a class="dropdown-item text-white" href=' {% url "catalog:index" %}'>Молочные продукты</a></li>
+                    <li><a class="dropdown-item text-white" href=' {% url "catalog:milk" %}'>Молочные продукты</a></li>
                     <li><a class="dropdown-item text-white" href=' {% url "catalog:index" %}'>Вода</a></li>
                     <li><a class="dropdown-item text-white" href=' {% url "catalog:index" %}'>Бакалея</a></li>
                     <li><a class="dropdown-item text-white" href=' {% url "catalog:index" %}'>Сладкое</a></li>

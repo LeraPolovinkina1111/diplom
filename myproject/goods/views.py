@@ -33,6 +33,27 @@ def catalog(request):
 
     return render(request, "goods/catalog.html", contex)
 
+def milk(request):
+    contex: dict[str, any] = {
+        'title': 'Home - Каталог',
+        'goods': [
+
+            {'image': 'deps/images/goods/milk1.jpg',
+             'name': 'Молоко',
+             'description': 'Молоко Талицкое',
+             'price': 93.00},
+
+            {'image': 'deps/images/goods/smetana.jpg',
+             'name': 'Сметана',
+             'description': 'Сметана Шадринская',
+             'price': 67.00},
+
+
+
+        ]
+    }
+
+    return render(request, "goods/catalog.html", contex)
 
 def product(request, product_slug):
     return render(request, "goods/product.html")
